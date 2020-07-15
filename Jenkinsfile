@@ -1,7 +1,7 @@
 node{
 stage('SCM checkout')
 { 
-git'https://github.com/Indhumathi17/spring-hibernate-maven-webapp'
+git'https://github.com/Indhumathi/spring-hibernate-maven-webapp'
 }
 stage('clean')
 {
