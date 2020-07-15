@@ -1,0 +1,10 @@
+node{
+  stage('SCM Checkout'){
+  git'https://github.com/Indhumathi17/spring-hibernate-maven-webapp'
+  }
+  //get maven home path
+  stage('Compile-Package'){
+  def mvn_Home = tool name: 'maven-3', type: 'maven'
+bat"${mvn_Home}/bin/mvn package"
+}
+}
