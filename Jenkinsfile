@@ -5,7 +5,7 @@ node{
   //get maven home path
   stage('clear'){
   def mvn_Home = tool name: 'Maven', type: 'maven'
-bat"${mvn_Home}/bin/mvn clean"
+bat "${mvn_Home}/bin/mvn clean"
 
 }
 }
