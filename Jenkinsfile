@@ -4,7 +4,7 @@ node{
   }
   //get maven home path
   stage('clear'){
-  //def mvn_Home = tool name: 'Maven', type: 'maven'
+  //def mvn_Home = tool name: 'Maven', type: 'Maven'
 sh "${mvn_Home}/bin/mvn clean"
 
 }
